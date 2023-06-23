@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estiloagend.css">
+  <title>AgroRio Registros</title>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+   <header class="header">
+    <div class="logo">
+      <a href="inicio.html">
+      <img src="img/LOGO-AGRO-RIO.png" alt="Logo AgroRio" class="logo-img"></a>
+    </div>
+    <div class="header-icon">
+      <img src="img/motorista.png" alt="icon de motorista">
+    </div>
+    <div class="header-title">
+      <h1>Agendamentos</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Formulário de Registro -->
+    <form class="formularioRegistro">
+
+      <!-- Registro Inline 1 -->
+      <div class="registro-inline">
+        <div class="registro">
+          <label for="numeronota">Numero da Nota</label>
+          <input name="numeronota" type="number" placeholder="Digite o número da nota da viagem">
+        </div>
+
+        <div class="registro">
+          <label for="motorista">Nome do Motorista</label>
+          <input name="motorista" type="text" placeholder="Digite o nome completo">
+        </div>
+
+        <div class="registro">
+          <label for="placa">Placa</label>
+          <input name="placa" type="text" placeholder="Digite a placa do veiculo">
+        </div>
+      </div>
+
+      <!-- Registro Inline 2 -->
+      <div class="registro-inline">
+        <div class="registro">
+          <label for="data">Data Saida</label>
+          <input name="data" type="date" placeholder="Digite a data de saída">
+        </div>
+
+        <div class="registro">
+          <label for="horario">Hora Agendada:</label>
+          <input name="horario" type="time">
+        </div>
+
+        <div class="registro">
+          <label for="saida">Local de Saída</label>
+          <input name="saida" type="text" placeholder="Digite o local de saída">
+        </div>
+      </div>
+
+      <!-- Registro Inline 3 -->
+      <div class="registro-inline">
+        <div class="registro">
+          <label for="datad">Data Descarga</label>
+          <input name="datad" type="date" placeholder="Digite a data de descarga">
+        </div>
+
+        <div class="registro">
+          <label for="destino">Local de Destino</label>
+          <input name="destino" type="text" placeholder="Digite o local de destino">
+        </div>
+      </div>
+
+      <!-- Botão Adicionar -->
+      <div class="button-container">
+        <button class="add-button">
+          <img src="img/add-new.png" alt="botão adicionar novo registro">
+           Adicionar
+        </button>
+      </div>
+
+      <!-- Botão buscar -->
+      <div class="button-container">
+        <button class="search-button">
+          <img src="img/search.png" alt="botão nova busca">
+           Buscar
+        </button>
+      </div>
+
+    </form>
+
+    <!-- Tabela de Registros -->
+    <table class="TabelaRegistros">
+      <thead>
+        <tr>
+          <th>N. Nota</th>
+          <th>Motorista</th>
+          <th>Placa</th>
+          <th>Data Saida</th>
+          <th>Hora Agendada</th>
+          <th>Local de Saída</th>
+          <th>Data Descarga</th>
+          <th>Local de Destino</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>João Silva</td>
+          <td>ABC-1234</td>
+          <td>2023-06-01</td>
+          <td>09:00</td>
+          <td>São Paulo</td>
+          <td>2023-06-02</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>João Silva</td>
+          <td>ABC-1234</td>
+          <td>2023-06-01</td>
+          <td>09:00</td>
+          <td>São Paulo</td>
+          <td>2023-06-02</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>João Silva</td>
+          <td>ABC-1234</td>
+          <td>2023-06-01</td>
+          <td>09:00</td>
+          <td>São Paulo</td>
+          <td>2023-06-02</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>67890</td>
+          <td>Maria Souza</td>
+          <td>XYZ-9876</td>
+          <td>2023-06-03</td>
+          <td>14:30</td>
+          <td>Rio de Janeiro</td>
+          <td>2023-06-04</td>
+          <td>São Paulo</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>54321</td>
+          <td>Marcos Oliveira</td>
+          <td>DEF-5678</td>
+          <td>2023-06-05</td>
+          <td>16:45</td>
+          <td>Rio de Janeiro</td>
+          <td>2023-06-06</td>
+          <td>São Paulo</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>98765</td>
+          <td>Laura Santos</td>
+          <td>GHI-4321</td>
+          <td>2023-06-07</td>
+          <td>10:15</td>
+          <td>São Paulo</td>
+          <td>2023-06-08</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>24680</td>
+          <td>Carlos Ferreira</td>
+          <td>JKL-9012</td>
+          <td>2023-06-09</td>
+          <td>11:30</td>
+          <td>São Paulo</td>
+          <td>2023-06-10</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>João Silva</td>
+          <td>ABC-1234</td>
+          <td>2023-06-01</td>
+          <td>09:00</td>
+          <td>São Paulo</td>
+          <td>2023-06-02</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>João Silva</td>
+          <td>ABC-1234</td>
+          <td>2023-06-01</td>
+          <td>09:00</td>
+          <td>São Paulo</td>
+          <td>2023-06-02</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>12345</td>
+          <td>João Silva</td>
+          <td>ABC-1234</td>
+          <td>2023-06-01</td>
+          <td>09:00</td>
+          <td>São Paulo</td>
+          <td>2023-06-02</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>67890</td>
+          <td>Maria Souza</td>
+          <td>XYZ-9876</td>
+          <td>2023-06-03</td>
+          <td>14:30</td>
+          <td>Rio de Janeiro</td>
+          <td>2023-06-04</td>
+          <td>São Paulo</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>54321</td>
+          <td>Marcos Oliveira</td>
+          <td>DEF-5678</td>
+          <td>2023-06-05</td>
+          <td>16:45</td>
+          <td>Rio de Janeiro</td>
+          <td>2023-06-06</td>
+          <td>São Paulo</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>98765</td>
+          <td>Laura Santos</td>
+          <td>GHI-4321</td>
+          <td>2023-06-07</td>
+          <td>10:15</td>
+          <td>São Paulo</td>
+          <td>2023-06-08</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>24680</td>
+          <td>Carlos Ferreira</td>
+          <td>JKL-9012</td>
+          <td>2023-06-09</td>
+          <td>11:30</td>
+          <td>São Paulo</td>
+          <td>2023-06-10</td>
+          <td>Rio de Janeiro</td>
+          <td>
+            <button class="button-icon">
+              <img src="img/edit.png" alt="Editar">
+            </button>
+            <button class="button-icon delete-icon">
+              <img src="img/delete.png" alt="Excluir">
+            </button>
+          </td>
+        </tr>
+                
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
