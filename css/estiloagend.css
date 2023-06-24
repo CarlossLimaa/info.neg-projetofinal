@@ -1,4 +1,3 @@
-/* Importação da fonte Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 /* Definições gerais */
@@ -170,4 +169,54 @@ a {
 /* Estilos para os links quando em hover */
 a:hover {
   color: #005129;
+}
+
+/* Mídias para tornar o site responsivo */
+
+/* Tablets e dispositivos com largura menor que 768px */
+@media (max-width: 767px) {
+  .container {
+    margin: 0 10%;
+  }
+}
+
+/* Smartphones e dispositivos com largura menor que 480px */
+@media (max-width: 479px) {
+  .container {
+    margin: 0 5%;
+  }
+
+  .logo {
+    width: 200px;
+    transform: scale(1);
+  }
+
+  .header-title h1 {
+    font-size: 24px;
+  }
+
+  .formularioRegistro input,
+  .formularioRegistro select {
+    padding: 15px;
+  }
+
+  .registro-inline {
+    flex-direction: column;
+  }
+
+  .registro {
+    flex: none;
+  }
+}
+
+/* Smartphones e dispositivos com largura menor que 320px */
+@media (max-width: 319px) {
+  .header-title h1 {
+    font-size: 20px;
+  }
+
+  .formularioRegistro input,
+  .formularioRegistro select {
+    padding: 10px;
+  }
 }

@@ -190,3 +190,33 @@ figcaption h2 {
 #rodape p {
   font-size: 16px;
 }
+
+/* Mídias para tornar o site responsivo */
+
+/* Tablets e dispositivos com largura menor que 768px */
+@media (max-width: 767px) {
+  .foto-comum .ladoesquerdo,
+  .foto-comum .ladodireito {
+    flex-basis: 100%;
+  }
+}
+
+/* Smartphones e dispositivos com largura menor que 480px */
+@media (max-width: 479px) {
+  .foto-comum {
+    flex-direction: column;
+  }
+
+  .ladoesquerdo img,
+  .ladodireito img {
+    flex-basis: 100%;
+  }
+}
+
+/* Smartphones e dispositivos com largura menor que 320px */
+@media (max-width: 319px) {
+  #logo {
+    width: 200px;
+    transform: scale(1);
+  }
+}
